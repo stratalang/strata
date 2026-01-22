@@ -1,0 +1,17 @@
+{
+  "name": "strata-docs",
+  "version": "1.0.0",
+  "description": "Strata Language Documentation",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev .",
+    "build": "vitepress build .",
+    "preview": "vitepress preview ."
+  },
+  "devDependencies": {
+    "vitepress": "^1.0.0"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^1.6.1"
+  }
+}

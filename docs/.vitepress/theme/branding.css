@@ -1,0 +1,259 @@
+.dark .hero-wordmark {
+  content: url('/branding/strata-logo-wordmark-dark.svg');
+}
+
+.home .content {
+  padding-bottom: 0px !important;
+}
+
+.vp-doc {
+  max-width: 1400px !important;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.build-anything-section {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-top: 4rem;
+}
+
+.build-header {
+  max-width: 1200px;
+  margin: 0 auto 1.5rem;
+  padding: 0 2rem;
+  padding-top: 20px;
+}
+
+.build-heading {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.build-intro {
+  margin: 0 auto;
+  opacity: 0.85;
+}
+
+.build-container {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2.5rem;
+  align-items: start;
+  padding: 0 2rem;
+}
+
+.build-tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.build-tab {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.25rem 1.5rem;
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.2s;
+  min-height: 90px;
+}
+
+.build-tab strong {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--vp-c-text-1);
+}
+
+.build-tab span {
+  font-size: 0.875rem;
+  color: var(--vp-c-text-2);
+  line-height: 1.5;
+}
+
+.build-tab:hover {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.dark .build-tab:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.build-tab.active {
+  background: #dbeafe;
+}
+
+.dark .build-tab.active {
+  background: rgba(59, 130, 246, 0.15);
+}
+
+.build-code-window {
+  position: relative;
+}
+
+.build-code-content {
+  display: none;
+}
+
+.build-code-content.active {
+  display: block;
+}
+
+.branding-asset {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin: 2rem 0;
+  padding: 2rem;
+  background: var(--vp-c-bg-soft);
+  border-radius: 8px;
+}
+
+.branding-asset-image {
+  flex-shrink: 0;
+}
+
+.branding-asset-image img {
+  display: block;
+}
+
+.branding-asset-label {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--vp-c-text-2);
+}
+
+.branding-asset-details {
+  flex: 1;
+}
+
+.branding-asset-details h4 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.color-palette {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.color-swatch {
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.color-hex {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.color-name {
+  font-size: 0.875rem;
+}
+
+.color-description {
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .vp-doc div[class*='language-'], .vp-block {
+    margin: 0 0 !important;
+  }
+}
+
+.build-code-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .build-code-window {
+    display: none;
+  }
+
+  .build-code-mobile {
+    display: block;
+    margin-top: 2rem;
+  }
+
+  .build-container {
+    display: block;
+    padding: 0;
+  }
+
+  .build-header, .build-tabs {
+    padding: 0 1.5rem;
+  }
+
+  .build-anything-section {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    left: auto;
+    right: auto;
+  }
+
+  .build-tab {
+    min-height: 80px;
+  }
+
+  .branding-asset {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .branding-asset-details {
+    width: 100%;
+  }
+
+  .color-palette {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .build-code-mobile {
+     margin-left: -1rem;
+     margin-right: -1rem;
+     border-radius: 0;
+  }
+
+  .build-tabs {
+    margin: 0 -20px;
+  }
+
+  .build-header, .build-tabs {
+    padding: 0;
+  }
+
+  .build-container {
+    padding: 0 1rem;
+  }
+}

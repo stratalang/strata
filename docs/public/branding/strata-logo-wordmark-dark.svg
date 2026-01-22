@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="720"
+   height="560"
+   viewBox="0 0 720 560"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="strata-logo-wordmark.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false" />
+  <rect
+     width="720"
+     height="560"
+     fill="none"
+     id="rect1"
+     x="0"
+     y="0" />
+  <g
+     transform="translate(180,40)"
+     id="g4">
+    <polygon
+       points="0,120 180,40 360,120 180,200 "
+       fill="#93c5fd"
+       id="polygon1" />
+    <polygon
+       points="0,160 180,80 360,160 180,240 "
+       fill="#60a5fa"
+       id="polygon2" />
+    <polygon
+       points="0,200 180,120 360,200 180,280 "
+       fill="#2563eb"
+       id="polygon3" />
+    <polygon
+       points="0,240 180,160 360,240 180,320 "
+       fill="#1e3a8a"
+       id="polygon4" />
+  </g>
+  <text
+     x="360"
+     y="480"
+     text-anchor="middle"
+     font-family="Inter, system-ui, '-apple-system', 'Segoe UI', sans-serif"
+     font-size="72px"
+     letter-spacing="8"
+     fill="#1F2937"
+     id="text4"
+     style="fill:#ffffff;fill-opacity:1">STRATA</text>
+</svg>
