@@ -147,7 +147,8 @@ export default defineConfig({
             { text: 'Editor Support & LSP', link: '/guides/editor-support' },
             { text: 'Debugging Guide', link: '/guides/debugging' },
             { text: 'Testing', link: '/guides/testing' },
-            { text: 'Web Server Guide', link: '/guides/web-server' }
+            { text: 'Web Server Guide', link: '/guides/web-server' },
+            { text: 'GUI Applications', link: '/guides/gui-applications' }
           ]
         }
       ],

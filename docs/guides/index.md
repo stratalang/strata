@@ -6,6 +6,8 @@ Step-by-step guides and tutorials for building with Strata.
 
 - [Configuration](/guides/configuration) - Project configuration and formatting settings
 - [Debugging Guide](/guides/debugging) - How to debug Strata applications in VS Code
+- [GUI Applications](/guides/gui-applications) - Building desktop apps with GTK4
+- [Testing](/guides/testing) - Testing Strata applications
 - [Web Server Guide](/guides/web-server) - Building and deploying web applications with Strata
 
 ---
@@ -14,4 +16,3 @@ Step-by-step guides and tutorials for building with Strata.
 - [Getting Started](/getting-started/) - Installation and first steps
 - [Language Reference](/language/) - Complete language documentation
 - [Examples](/examples/) - Code examples and tutorials
-
