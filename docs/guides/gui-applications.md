@@ -58,13 +58,13 @@ fn main(): Void {
         'builder_only' => false,
     ]);
 
-    app.onStartup(handler: (a: App) => {
-        let window = a.window();
+    app.onStartup(handler: (app: App) => {
+        let window = app.window();
         window.title(title: 'Hello World');
         window.defaultSize(width: 480, height: 240);
 
         // add a simple label
-        let label = a.label(text: 'Hello from Strata + GTK4!');
+        let label = app.label(text: 'Hello from Strata + GTK4!');
         window.child(child: label);
 
         window.show();
