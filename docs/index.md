@@ -81,7 +81,7 @@ readonly class Point {
 <h3 class="build-heading">Build Anything</h3>
 
 <p class="build-intro">
-From powerful command-line tools to high-performance web applications, Strata delivers the type safety and tooling you need to ship reliable, production-ready software.
+From powerful command-line tools and high-performance web applications to vibrant desktop GUIs, Strata delivers the type safety and tooling you need to ship reliable, production-ready software.
 </p>
 </div>
 
@@ -96,6 +96,10 @@ From powerful command-line tools to high-performance web applications, Strata de
 <strong>Web Applications</strong>
 <span>Build high-performance servers with RoadRunner or integrate seamlessly with frameworks like Laravel and Symfony.</span>
 </button>
+<button class="build-tab" data-tab="gui">
+<strong>GUI Applications</strong>
+<span>Create desktop applications with type safety and performance using GTK4.</span>
+</button>
 </div>
 
 <div class="build-code-window">
@@ -105,12 +109,17 @@ From powerful command-line tools to high-performance web applications, Strata de
 ```strata
 fn main(): Void {
     match parseArgs() {
-        Ok(config) => run(config: config),
+        Ok(config) => {
+            let result = run(config: config);
+            print("Successfully finished with: ${result}");
+        },
         Err(e) => {
             print("Error: ${e}");
             exit(1);
         }
     };
+
+    print("Done.");
 }
 ```
 
@@ -123,11 +132,37 @@ import Illuminate.Support.Facades.Route;
 import Illuminate.Support.Facades.JsonResponse;
 
 Route::post(uri: "/users", action: (request) => {
-    return match createUser(request: request) {
-        Ok(user) => JsonResponse(data: user, status: 201),
-        Err(e) => JsonResponse(data: e, status: 500),
+    match createUser(request: request) {
+        Ok(user) => {
+            return JsonResponse(data: user, status: 201);
+        },
+        Err(e) => {
+            return JsonResponse(data: e, status: 500);
+        }
     }
 });
+```
+
+</div>
+
+<div class="build-code-content" data-content="gui">
+
+```strata
+import Strata.Gtk.App;
+
+fn main(): Void {
+    let app = App(options: [ 'builder_only' => false ]);
+
+    app.onStartup(handler: (app: App) => {
+        let window = app.window();
+        window.title(title: 'Hello World');
+        window.defaultSize(width: 480, height: 240);
+        window.child(child: app.label(text: 'Hello World'));
+        window.show();
+    });
+
+    app.run();
+}
 ```
 
 </div>
@@ -140,12 +175,17 @@ Route::post(uri: "/users", action: (request) => {
 ```strata
 fn main(): Void {
     match parseArgs() {
-        Ok(config) => run(config: config),
+        Ok(config) => {
+            let result = run(config: config);
+            print("Successfully finished with: ${result}");
+        },
         Err(e) => {
             print("Error: ${e}");
             exit(1);
         }
     };
+
+    print("Done.");
 }
 ```
 
@@ -158,11 +198,37 @@ import Illuminate.Support.Facades.Route;
 import Illuminate.Support.Facades.JsonResponse;
 
 Route::post(uri: "/users", action: (request) => {
-    return match createUser(request: request) {
-        Ok(user) => JsonResponse(data: user, status: 201),
-        Err(e) => JsonResponse(data: e, status: 500),
+    match createUser(request: request) {
+        Ok(user) => {
+            return JsonResponse(data: user, status: 201);
+        },
+        Err(e) => {
+            return JsonResponse(data: e, status: 500);
+        }
     }
 });
+```
+
+</div>
+
+<div class="build-code-content" data-content="gui">
+
+```strata
+import Strata.Gtk.App;
+
+fn main(): Void {
+    let app = App(options: [ 'builder_only' => false ]);
+
+    app.onStartup(handler: (app: App) => {
+        let window = app.window();
+        window.title(title: 'Hello World');
+        window.defaultSize(width: 480, height: 240);
+        window.child(child: app.label(text: 'Hello World'));
+        window.show();
+    });
+
+    app.run();
+}
 ```
 
 </div>
