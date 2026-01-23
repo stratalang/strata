@@ -113,6 +113,35 @@ strata run      # Uses entryPoint from config
 strata serve    # Uses entryPoint from config
 ```
 
+#### `runtime`
+
+- **Type:** `object`
+- **Default:** `{}`
+- **Description:** Configure the PHP runtime environment for `run` and `serve` commands.
+
+```json
+{
+  "runtime": {
+    "extensions": [
+      "/path/to/strata_gtk.so"
+    ],
+    "ini": {
+      "ffi.enable": "1"
+    }
+  }
+}
+```
+
+##### `runtime.extensions`
+
+- **Type:** `string[]`
+- **Description:** List of PHP extensions to load. Can be standard extension names (e.g., `"ffi"`) or absolute paths to `.so`/`.dll` modules.
+
+##### `runtime.ini`
+
+- **Type:** `object`
+- **Description:** Key-value pairs of PHP INI settings to apply at runtime.
+
 ### Analysis Options (`analysis`)
 
 Control semantic analysis and linting behavior.
