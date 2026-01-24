@@ -1,0 +1,29 @@
+{
+  "srcDir": "src",
+  "buildDir": "build",
+  "entryPoint": "src/index.str",
+  "runtime": {
+    "extensions": [],
+    "ini": {}
+  },
+  "analysis": {
+    "phpInterop": false,
+    "unusedDeclarations": "strict"
+  },
+  "fmt": {
+    "indentStyle": "spaces",
+    "indentSize": 4,
+    "lineEnding": "lf",
+    "maxLineLength": 120,
+    "trailingCommas": true,
+    "braceStyle": "same-line",
+    "importOrder": "alphabetical",
+    "quoteStyle": "double",
+    "arrowParens": "always",
+    "spacesInObjectPattern": true,
+    "spacesInFunctionCalls": true,
+    "spacesAroundOperators": true,
+    "insertFinalNewline": true,
+    "trimTrailingWhitespace": true
+  }
+}
