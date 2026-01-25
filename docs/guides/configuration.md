@@ -69,26 +69,6 @@ You can use `"."` to use the project root as the source directory:
 }
 ```
 
-
-#### `phpInterop`
-
-- **Type:** `boolean`
-- **Default:** `false`
-- **Description:** Enable PHP class introspection for LSP features (hover tooltips, completion).
-
-When enabled, the Language Server will use PHP reflection and DocBlock annotations to provide type information for PHP classes and methods. This enables features like:
-- Hover tooltips showing method signatures from PHP classes
-- Completion for PHP class members
-- Support for Laravel's magic methods (`@method` annotations)
-
-```json
-{
-  "phpInterop": true
-}
-```
-
-**Performance:** PHP introspection results are cached for performance. Enable this option if you're working with PHP frameworks like Laravel.
-
 #### `entryPoint`
 
 - **Type:** `string | null`
@@ -180,6 +160,27 @@ Control semantic analysis and linting behavior.
   }
 }
 ```
+
+#### `analysis.phpInterop`
+
+- **Type:** `boolean`
+- **Default:** `false`
+- **Description:** Enable PHP class introspection for features (hover tooltips, completion).
+
+When enabled, the Language Server will use PHP reflection and DocBlock annotations to provide type information for PHP classes and methods. This enables features like:
+- Hover tooltips showing method signatures from PHP classes
+- Completion for PHP class members
+- Support for Laravel's magic methods (`@method` annotations)
+
+```json
+{
+  "analysis": {
+    "phpInterop": true
+  }
+}
+```
+
+**Performance:** PHP introspection results are cached for performance. Enable this option if you're working with PHP frameworks like Laravel.
 
 ### Formatting Options (`fmt`)
 
@@ -639,7 +640,7 @@ Strata compiles to PHP, and Composer's PSR-4 autoloading works with the compiled
    ```
 
 2. **Enable PHP Interop**:
-   Set `"phpInterop": true` in your `.strata.json`.
+   Set `"analysis.phpInterop": true` in your `.strata.json`.
 
 3. **Use in Strata code**:
    ```strata
